@@ -1,1 +1,1 @@
-golang exercises
+go learnings
