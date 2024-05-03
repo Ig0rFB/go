@@ -14,11 +14,11 @@ func main(){
 	}
 defer file.Close()
 
-src, _, err := image.Decode(file)
+decodedImg, _, err := image.Decode(file)
 if err != nil {
-	log.Fatalln(err)
+	log.Fatalln("Image decode error, check file format")
 }
 
-bounds := src.Bounds()
+bounds := decodedImg.Bounds()
 log.Print("Image Bounds: ", bounds)
 }
