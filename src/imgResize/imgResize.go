@@ -43,7 +43,6 @@ func averagePixelValue(img image.Image) color.RGBA {
 			count++
 		}
 	}
-
 	return color.RGBA{
 		R: uint8(rTotal / count),
 		G: uint8(gTotal / count),
