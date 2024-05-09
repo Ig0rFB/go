@@ -31,7 +31,6 @@ func main() {
 			return chars[i] < chars [j]
 		})
 
-
         fmt.Println("Frequency list of all characters used:")
         for _, char := range chars {
             fmt.Printf("%c appears %d times\n", char, frequencyList[char])
